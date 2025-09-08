@@ -1,14 +1,14 @@
-# 🩺 Diabetic Retinopathy Lesion Classification using Machine Learning
+# Diabetic Retinopathy Lesion Classification using Machine Learning
 
 Early detection of diabetic retinopathy (DR) is vital to prevent vision loss, but manual grading of retinal fundus images is time-consuming and difficult to scale.  
 This project develops and evaluates a **lightweight, two-stage machine learning pipeline** for lesion classification and severity grading, implemented on the benchmark **DIARETDB1** dataset.
 
 ---
 
-## 📖 Abstract
+## Abstract
 
 - **Problem:** Manual grading of DR images requires expert ophthalmologists and is not feasible for mass screening.  
-- **Solution:** A modular pipeline with **preprocessing → segmentation → lesion detection → hierarchical classification → severity grading**.  
+- **Solution:** A modular pipeline with **preprocessing → segmentation → lesion detection → hierarchical classification**.  
 - **Models tested:** Logistic Regression, Random Forest, XGBoost.  
 - **Results:**  
   - Bright lesions easier to detect than red lesions.  
@@ -20,7 +20,7 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 1. Enhance low-contrast retinal images through advanced preprocessing.  
 2. Segment background structures (optic disc, vessels) to reduce misclassification.  
@@ -30,7 +30,7 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Name:** [DIARETDB1](https://www.it.lut.fi/project/imageret/diaretdb1/)  
 - **Size:** 89 color fundus images (84 DR, 5 normal)  
@@ -42,7 +42,7 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 ---
 
-## ⚙️ Methodology / Pipeline
+## ⚙Methodology / Pipeline
 
 1. **Preprocessing:** Resize → Green channel extraction → CLAHE → Median filter → Morphological opening → Normalization.  
 2. **Segmentation:** Vessel suppression & optic disc masking to remove normal anatomy.  
@@ -50,11 +50,10 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 4. **Hierarchical Classification:**  
    - **Stage 1:** Lesion vs Background (Bright / Red families).  
    - **Stage 2:** Subtype classification → EX vs CWS, MA vs HM.  
-5. **Severity Grading:** Aggregate lesion counts → classify as **No DR, Mild, Moderate, Severe**.  
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠Technologies Used
 
 - **Language:** Python  
 - **Core Scientific:** NumPy, Pandas, SciPy  
@@ -65,7 +64,7 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 ---
 
-## 📈 Results
+## Results
 
 ### Stage 1: Lesion vs Background
 | Model              | Task               | Sensitivity | Specificity | Accuracy | ROC-AUC |
@@ -81,26 +80,7 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 ---
 
-## 🚀 Installation & Usage
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/diabetic-retinopathy-ml.git
-cd diabetic-retinopathy-ml
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Train models
-python main.py --mode train
-
-# Evaluate models
-python main.py --mode test
-```
-
----
-
-## ✅ Strengths
+## Strengths
 
 - Leakage-safe evaluation (grouped by image).  
 - Transparent handling of class imbalance.  
@@ -109,7 +89,7 @@ python main.py --mode test
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - Evaluated only on DIARETDB1 (no external validation).  
 - Limited hyperparameter tuning.  
@@ -118,7 +98,7 @@ python main.py --mode test
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Validate on larger, multi-institution datasets.  
 - Explore CNN/deep learning for end-to-end lesion detection.  
@@ -127,8 +107,9 @@ python main.py --mode test
 
 ---
 
-## 📚 References
+## References
 
-- Dissertation: *Diabetic Retinopathy Lesion Classification using Machine Learning*, Sibin Shibu, MSc Data Science, University of Roehampton, 2025.  
-- DIARETDB1 Dataset: Kauppi et al., “DIARETDB1 diabetic retinopathy database and evaluation protocol,” 2007.  
+- Main Research Paper: Y. Aruna Suhasini Devi, K. Manjunatha Chari, "ADRGS: an automatic diabetic retinopathy grading system
+through machine learning", 5 September 2024.
+- DIARETDB1 Dataset: https://www.kaggle.com/datasets/nguyenhung1903/diaretdb1-v21  
 - Additional references from dissertation (available in full report).  
