@@ -32,7 +32,7 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 ## Dataset
 
-- **Name:** [DIARETDB1](https://www.it.lut.fi/project/imageret/diaretdb1/)  
+- **Name:** [DIARETDB1](https://www.kaggle.com/datasets/nguyenhung1903/diaretdb1-v21)
 - **Size:** 89 color fundus images (84 DR, 5 normal)  
 - **Annotations:** Expert-validated for four lesion types:  
   - MA (Microaneurysms)  
@@ -111,5 +111,5 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 - Main Research Paper: Y. Aruna Suhasini Devi, K. Manjunatha Chari, "ADRGS: an automatic diabetic retinopathy grading system
 through machine learning", 5 September 2024.
-- DIARETDB1 Dataset: https://www.kaggle.com/datasets/nguyenhung1903/diaretdb1-v21  
+- DIARETDB1 Dataset: [DIARETDB1](https://www.kaggle.com/datasets/nguyenhung1903/diaretdb1-v21)
 - Additional references from dissertation (available in full report).  
