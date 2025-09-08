@@ -111,5 +111,5 @@ This project develops and evaluates a **lightweight, two-stage machine learning 
 
 - Main Research Paper: Y. Aruna Suhasini Devi, K. Manjunatha Chari, "ADRGS: an automatic diabetic retinopathy grading system
 through machine learning", 5 September 2024.
-- DIARETDB1 Dataset: [DIARETDB1](https://www.kaggle.com/datasets/nguyenhung1903/diaretdb1-v21)
+- Dataset: [DIARETDB1](https://www.kaggle.com/datasets/nguyenhung1903/diaretdb1-v21)
 - Additional references from dissertation (available in full report).  
